@@ -11,12 +11,12 @@ def load_model():
     """Load model and processor with caching"""
     try:
         model = Gemma2AudioForConditionalGeneration.from_pretrained(
-            "nexa-collaboration/nano-omini-instruct",
+            "nexaAIDev/nano-omini-instruct",
             device_map="cuda",
             torch_dtype=torch.bfloat16
         )
         processor = Gemma2AudioProcessor.from_pretrained(
-            "nexa-collaboration/gemma2-2b-audio-whisper-medium-full-model-it"
+            "nexaAIDev/gemma2-2b-audio-whisper-medium-full-model-it"
         )
         processor.tokenizer.pad_token = processor.tokenizer.eos_token
         processor.tokenizer.padding_side = "right"
