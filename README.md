@@ -1,19 +1,26 @@
-# 💬 Chatbot template
+# Audio Processing Assistant
 
-A simple Streamlit app that shows how to build a chatbot using OpenAI's GPT-3.5.
+A Streamlit application for processing audio files with various AI models.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://chatbot-template.streamlit.app/)
+## Features
 
-### How to run it on your own machine
+- Audio transcription
+- Audio summarization
+- Meeting notes extraction
+- Lecture notes generation
 
-1. Install the requirements
+## Setup
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+1. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-2. Run the app
+2. Run the application:
+```bash
+streamlit run streamlit_app.py
+```
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+## Requirements
+
+See `requirements.txt` for the full list of dependencies.
